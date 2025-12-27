@@ -95,8 +95,12 @@ module.exports = {
                 const currentPlayers = players.slice(start, end);
 
                 const playerList = currentPlayers
-                    .map((player, index) => `${start + index + 1}. **${player}**`)
+                    .map((playerObj, index) => {
+                        const name = playerObj.name || playerObj || 'Nome sconosciuto';
+                        return `${start + index + 1}. **${name}**`;
+                    })
                     .join('\n');
+
 
                 const embed = new EmbedBuilder()
                     .setTitle('👥 Lista Giocatori Online')
