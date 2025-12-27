@@ -32,7 +32,7 @@ Mostra lo stato live del server in un canale dedicato e fornisce comandi slash p
 
 1. Clona o scarica il repository:
 - `git clone https://github.com/imperatorix17/ImpxStatusMCBot.git`
-- `cd ImpxStatusMcBot`
+- `cd ImpxStatusMCBot`
 
 
 2. Installa le dipendenze:
@@ -117,4 +117,5 @@ Per deploy su VPS / hosting (PM2, systemd, ecc.) puoi semplicemente eseguire:
 Grazie per aver provato il mio Bot Discord!
 
 - Imperatorix
+
 
