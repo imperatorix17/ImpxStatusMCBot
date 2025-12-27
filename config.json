@@ -1,0 +1,9 @@
+{
+"token": "IL_TUO_BOT_TOKEN",
+"clientId": "IL_TUO_CLIENT_ID",
+"guildId": "ID_SERVER_TEST_OPZIONALE",
+"serverIP": "play.impx.it",
+"serverPort": 25566,
+"serverType": "java", 
+"channelID": "ID_CANALE_STATUS"
+}

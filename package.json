@@ -1,0 +1,27 @@
+{
+  "name": "impx-minecraft-status-bot",
+  "version": "1.0.0",
+  "description": "Bot Discord in **Node.js + discord.js v14** che monitora uno o più server Minecraft (Java o Bedrock) usando l’API di mcsrvstat.us. Mostra lo stato live del server in un canale dedicato e fornisce comandi slash per vedere info dettagliate, player online e MOTD.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "minecraft",
+    "status",
+    "bot",
+    "mc",
+    "java",
+    "bedrock",
+    "discord"
+  ],
+  "author": "Imperatorix",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^14.18.0",
+    "dotenv": "^16.4.7",
+    "minecraft-server-util": "^5.4.4"
+  }
+}
+
