@@ -31,38 +31,26 @@ Mostra lo stato live del server in un canale dedicato e fornisce comandi slash p
 ## Installazione
 
 1. Clona o scarica il repository:
-- git clone 
-- cd ImpxStatusMcBot
+- `git clone`
+- `cd ImpxStatusMcBot`
 
 
 2. Installa le dipendenze:
-- npm install
+- `npm install`
 
 
 Minimo:
 - `discord.js`
 - eventuale `node-fetch` / fetch globale (Node 18+ ha `fetch` built-in) [web:94].
 
-3. Crea `config.json` nella root:
-
-{
-"token": "IL_TUO_BOT_TOKEN",
-"clientId": "IL_TUO_CLIENT_ID",
-"guildId": "ID_SERVER_TEST_OPZIONALE",
-"serverIP": "mc.impx.it",
-"serverPort": 25566,
-"serverType": "java",
-"channelID": "ID_CANALE_STATUS"
-}
-
-
+3. Modifica `config.json` nella root:
 
 - `serverType`: `"java"` oppure `"bedrock"`.
 - `guildId`: opzionale; se valorizzato, i comandi vengono registrati solo in quella guild (immediati). Se omesso, vengono registrati globalmente (fino a 1h di propagazione).
 
 ## Avvio
 
-- node index.js
+- `node index.js`
 
 
 In console vedrai:
@@ -101,18 +89,6 @@ In console vedrai:
   - Paginazione (20 giocatori per pagina) con bottoni `⬅️` / `➡️`.
   - Collector di componenti valido 5 minuti, poi bottoni disabilitati.
 
-## Struttura del progetto
-
-ImpxStatusMcBot/
-├── index.js # Entrypoint: client, registrazione comandi, status auto
-├── config.json # Configurazione bot + server MC
-├── commands/
-│ ├── status.js # /status - stato snapshot (ephemeral)
-│ ├── info-mc.js # /info-mc - info dettagliate server
-│ └── playerlist.js # /playerlist - lista giocatori (Java)
-├── package.json
-└── README.md
-
 
 ## Note tecniche
 
@@ -139,4 +115,5 @@ Per deploy su VPS / hosting (PM2, systemd, ecc.) puoi semplicemente eseguire:
 - pm2 start index.js --name impxstatusmc
 
 Grazie per aver provato il mio Bot Discord!
+
 - Imperatorix
